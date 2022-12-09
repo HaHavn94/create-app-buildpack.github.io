@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/create-app-buildpack/static/css/main.ea757f25.css",
+    "main.css": "/create-app-buildpack/static/css/main.8a45f6fb.css",
     "main.js": "/create-app-buildpack/static/js/main.58ffec95.js",
     "static/js/787.ff878cfb.chunk.js": "/create-app-buildpack/static/js/787.ff878cfb.chunk.js",
     "index.html": "/create-app-buildpack/index.html",
-    "main.ea757f25.css.map": "/create-app-buildpack/static/css/main.ea757f25.css.map",
+    "main.8a45f6fb.css.map": "/create-app-buildpack/static/css/main.8a45f6fb.css.map",
     "main.58ffec95.js.map": "/create-app-buildpack/static/js/main.58ffec95.js.map",
     "787.ff878cfb.chunk.js.map": "/create-app-buildpack/static/js/787.ff878cfb.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ea757f25.css",
+    "static/css/main.8a45f6fb.css",
     "static/js/main.58ffec95.js"
   ]
 }
