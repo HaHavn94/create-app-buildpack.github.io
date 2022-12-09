@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.css'
+import Sidebar from './Components/Sidebar'
+import Training from './Components/Training'
+import Customers from './Components/Customers'
+import {BrowserRouter, Routes, Route} from 'react-router-dom'
+import Calendar from './Components/Calendar'
+import Chart from './Components/Chart'
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <div>     
+<BrowserRouter> 
+ <Sidebar>
+     <Routes>
+            <Route path="/"           element={<Customers/>} > </Route>
+            <Route path="/trainings" element={<Training />} >  </Route>
+            <Route path="/calendar" element={<Calendar />} >  </Route>
+            <Route path="/barchart"  element={<Chart/>} >  </Route>
+     </Routes>
+  </Sidebar>
+</BrowserRouter>   
+</div>
+  )
 }
-
-export default App;
