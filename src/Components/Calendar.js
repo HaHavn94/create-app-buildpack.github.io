@@ -7,29 +7,29 @@ import { addMinutes } from 'date-fns';
 
 function Calendar() {
   const [caData, setCaData] = useState([])
- 
+
   const updatedData = caData.map((v) => ({
     title: v.activity + "/ " + v.customer.firstname + " " + v.customer.lastname,
     start: v.date,
-    end : addMinutes(new Date(v.date), v.duration)
-    
+    end: addMinutes(new Date(v.date), v.duration)
+
   }));
 
-  useEffect( () => {
-    fetch('https://customerrest.herokuapp.com/gettrainings')
-    .then(response => {
-        if (response.ok) 
-           return response.json() 
-        else 
-        alert("Something goes wrong") 
-    }
-    )
+  useEffect(() => {
+    fetch('https://traineeapp.azurewebsites.net/gettrainings')
+      .then(response => {
+        if (response.ok)
+          return response.json()
+        else
+          alert("Something goes wrong")
+      }
+      )
       .then(data => setCaData(data))
-    .catch(err => console.log(err))
+      .catch(err => console.log(err))
   }, [])
 
   return (
-    <div className="App">     
+    <div className="App">
       <FullCalendar
         plugins={[dayGridPlugin, timeGridPlugin, interactionPlugin]}
         initialView="dayGridMonth"
@@ -43,8 +43,8 @@ function Calendar() {
           },
         }}
         events={updatedData}
-        eventColor="blue"     
-      />     
+        eventColor="blue"
+      />
     </div>
   );
 }
