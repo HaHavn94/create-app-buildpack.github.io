@@ -1,5 +1,5 @@
 {
-  "homepage": "http://hahavn94.github.io/create-app-buildpack",
+  "homepage": "https://hahavn94.github.io/create-app-buildpack.github.io",
   "name": "training-school-app",
   "version": "0.1.0",
   "private": true,
@@ -57,6 +57,7 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^5.0.0"
+    "gh-pages": "^5.0.0",
+    "netlify-cli": "^12.13.1"
   }
 }
