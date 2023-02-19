@@ -15,7 +15,7 @@ const Sidebar = ({ children }) => {
 
     const menuItem = [
         {
-            path: "/create-app-buildpack",
+            path: "/",
             name: "Customers",
             icon: <DirectionsRunIcon />
 
