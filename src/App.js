@@ -13,7 +13,7 @@ export default function App() {
       <BrowserRouter>
         <Sidebar>
           <Routes>
-            <Route path="/" element={<Customers />} > </Route>
+            <Route path="/customers" element={<Customers />} > </Route>
             <Route path="/trainings" element={<Training />} >  </Route>
             <Route path="/calendar" element={<Calendar />} >  </Route>
             <Route path="/barchart" element={<Chart />} >  </Route>
