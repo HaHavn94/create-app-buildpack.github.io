@@ -3,7 +3,7 @@ import MaterialReactTable from "material-react-table";
 import { format } from 'date-fns'
 import DeleteTwoToneIcon from '@mui/icons-material/DeleteTwoTone';
 import { Box, Button } from '@mui/material/';
-import AddTraining from './AddTraining'
+import AddTraining from './AddTraining';
 
 function Training() {
   const [trainers, setTrainers] = useState([
@@ -52,7 +52,7 @@ function Training() {
   }
 
   const addTraining = (data) => {
-    fetch('https://traineeapp.azurewebsites.net/gettrainings', {
+    fetch('https://traineeapp.azurewebsites.net/trainings', {
       method: 'POST',
       headers: { 'Content-type': 'application/json' },
       body: JSON.stringify(data)
