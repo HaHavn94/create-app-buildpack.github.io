@@ -15,7 +15,7 @@ const Sidebar = ({ children }) => {
 
     const menuItem = [
         {
-            path: "/",
+            path: "/customers",
             name: "Customers",
             icon: <DirectionsRunIcon />
 
